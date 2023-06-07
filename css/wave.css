@@ -1,0 +1,74 @@
+.start {
+    background: linear-gradient(287.15deg, #450E4B 0%, #3C0C41 24.48%, rgba(207, 0, 99, 0) 100%), #CF0063;
+    height: 50vh;
+    z-index: -1;
+}
+
+.wave {
+    background: url(../img/wave.png);
+    height: 50vh;
+}
+
+.wave__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-direction: column;
+}
+
+.wave__wrap-h {
+    font-family: var(--GR);
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 48px;
+    color: var(--white);
+}
+
+.wave__wrap-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.wave__wrap-btns-btn {
+    padding: 20px 40px;
+    font-family: var(--GR);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: var(--white);
+    background: var(--pink);
+    border: none;
+    transition: 0.4s;
+}
+
+.wave__wrap-btns-btn:hover{
+    background: none;
+}   
+
+@media screen and (max-width:1200px) {
+    .wave__wrap-btns-btn{
+        padding: 16px 32px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .wave__wrap-btns-btn{
+        padding: 14px 28px;
+    }
+}
+
+@media screen and (max-width:567px){
+    .wave__wrap-btns-btn{
+        padding: 6px 12px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .wave__wrap-h {
+        font-size: 24px;
+        line-height: 30px;
+    }
+}

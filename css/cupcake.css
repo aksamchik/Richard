@@ -1,0 +1,62 @@
+.cupcake {
+    background: var(--bl);
+    width: 100%;
+    height: 100%;
+}
+
+.cupcake__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+    padding: 100px 0 0;
+}
+
+.cupcake__wrap-h {
+    font-family: var(--GR);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 2px;
+    color: var(--gr);
+}
+
+.cupcake__wrap-p {
+    font-family: var(--GR);
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 48px;
+    color: var(--white);
+    max-width: 607px;
+    text-align: center;
+}
+
+@media screen and (max-width:1220px) {
+    .cupcake__wrap img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width:900px){
+    .cupcake__wrap-p {
+        font-size: 30px;
+        line-height: 40px;
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width:480px){
+    .cupcake__wrap-p {
+        font-size: 20px;
+        line-height: 30px;
+        max-width: 300px;
+    }
+
+    .cupcake__wrap{
+        padding: 40px 0 0;
+        gap: 20px;
+    }
+}

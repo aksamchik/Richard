@@ -1,0 +1,123 @@
+.footer {
+    background: var(--bl);
+}
+
+.nav__top {
+    padding: 120px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nav__top-h {
+    font-family: var(--GR);
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 48px;
+    color: var(--white);
+}
+
+.nav__top-p {
+    font-family: var(--GR);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--gray);
+}
+
+.nav__top-form {
+    display: flex;
+    margin-top: 20px;
+}
+
+.nav__top-form-inp {
+    font-family: var(--GR);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #1C1C1C;
+    padding: 20px 30px;
+    border-radius: 3px 0px 0px 3px;
+    border: none;
+    outline: none;
+}
+
+.nav__top-form-btn {
+    font-family: var(--GR);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #1C1C1C;
+    padding: 20px 30px;
+    border-radius: 0px 3px 3px 0px;
+    background: var(--pink);
+    border: none;
+    outline: none;
+}
+
+
+.nav__down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 0 70px;
+}
+
+.down__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.down__menu-link a {
+    font-family: var(--GR);
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--gray);
+}
+
+@media screen and (max-width:600px){
+    .down__menu{
+        max-width: 300px;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media screen and (max-width:567px) {
+    .nav__top-h {
+        font-size: 28px;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    .nav__top-p {
+        font-size: 14px;
+        line-height: 23px;
+        text-align: center;
+        max-width: 280px;
+    }
+
+    .nav__top-form-btn {
+        font-size: 13px;
+        line-height: 22px;
+        padding: 10px 15px;
+    }
+
+    .nav__top-form-inp {
+        font-size: 13px;
+        line-height: 22px;
+        padding: 10px 15px;
+    }
+
+    .nav__top{
+        padding: 60px 0 100px;
+    }
+
+}
